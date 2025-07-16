@@ -8,7 +8,16 @@ module.exports = {
 
     ],
   theme: {
-    extend: {},
+      extend: {
+          colors: {
+              primary: '#ffffff',
+              accent: '#fbbf24',
+              textBase: '000000',
+          },
+          fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+          }, 
+      },
   },
   plugins: [],
 }
