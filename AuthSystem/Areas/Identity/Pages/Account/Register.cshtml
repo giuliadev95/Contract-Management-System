@@ -27,10 +27,15 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <div>
+                <p>
+                    <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Login into your account</a>
+                </p>
+            </div>
         </form>
     </div>
+    @* Comment out the section containing The logic to connect to another authentication system
     <div class="col-md-6 col-md-offset-2">
-         @* Comment out the section containing The logic to connect to another authentication system
         <section>
             <h3>Use another service to register.</h3>
             <hr />
@@ -59,8 +64,8 @@
                 }
             }
         </section>
-        *@
     </div>
+    *@
 </div>
 
 @section Scripts {
