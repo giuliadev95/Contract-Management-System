@@ -1,36 +1,30 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using AuthSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
 namespace AuthSystem.Controllers
 {
-    public class HomeController : Controller 
-        /* 
-            Estende Controller, quindi pu� gestire:
+    public class PeopleController : Controller
+    /* 
+        Estende Controller, quindi può gestire:
 
-            Richieste HTTP (GET, POST, ecc.)
+        Richieste HTTP (GET, POST, ecc.)
 
-            Rendering di Razor Views
+        Rendering di Razor Views
 
-            Redirezioni, Json, ecc.
-        */
+        Redirezioni, Json, ecc.
+    */
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<PeopleController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public PeopleController(ILogger<PeopleController> logger)
         {
             _logger = logger;
         }
 
         [Authorize]
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public IActionResult Contracts()
         {
             return View();
         }

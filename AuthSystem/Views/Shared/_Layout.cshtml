@@ -39,27 +39,25 @@
         </p>
         <nav>
                 <div class="navbar d-sm-inline-flex justify-content-between">
-                <ul class= "flex flex-row justify-center basis-auto ">
-                        <li class="">
-                            <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                    <li class="">
-                            <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Contracts</a>
-                        </li>
-                    <li class="">
-                            <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Clients</a>
-                        </li>
-                        <li class="">
+                    <ul class= "flex flex-row justify-center basis-auto ">
+                            <li class="">
+                                <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="">
+                                <a class="" asp-area="" asp-controller="Home" asp-action="Contracts">Contracts</a>
+                            </li>
+                            <li class="">
+                                <a class="" asp-area="" asp-controller="People" asp-action="Index">People</a>
+                            </li>
                             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                                 <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
-                            </form>
-                        </li>
+                            </form>      
                     </ul>
                 </div>
         </nav>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <!-- Comment Bootstrap link, as no longer required.
+    <!-- Comment out Bootstrap link, as no longer required.
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     --> 
     <script src="~/js/site.js" asp-append-version="true"></script>
